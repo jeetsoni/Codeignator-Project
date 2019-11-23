@@ -11,11 +11,11 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 	<title>testing</title>
-</head>
+</head>	
 <body>
 		<div class="container">
 			<br> 
-			<h3 align="center">Complate User Registration and Login System in Codeigniter</h3>
+			<h3 align="center">Registration</h3>
 			<br>
 			<div class="panel panel-default rform">
 				<div class="panel-heading">Register</div>
@@ -37,7 +37,7 @@
 						<div class="form-group">
 							<label>Enter Your Name</label>
 							<input type="text" name="user_name" class="form-control" value="<?php echo set_value('user_name'); ?>">
-							<span class="text-danger"><?php echo form_error('username'); ?></span>
+							<span class="text-danger"><?php echo form_error('user_name'); ?></span>
 						</div>
 						<div class="form-group">
 							<label>Enter Your Valid Email Address</label>

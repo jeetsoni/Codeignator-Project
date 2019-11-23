@@ -38,7 +38,29 @@ class Profile_con extends CI_Controller
     	else
     	{
     		$this->load->view('add_post_view');
-    	}
+    	   
+        }
+    }
+
+    public function delpost(){
+        $id = $this->input->post('id');
+        $this->load->model('admin_model');
+            if($this->admin_model->delpost($id))
+            {
+                $this->session->set_flashdata('insert_post','Post deleted Successfully');
+                $this->session->set_flashdata('msg_class','alert-success');                
+            }
+            else
+            {
+                
+                $this->session->set_flashdata('insert_post','Try Again not Delete'
+
+            );
+                $this->session->set_flashdata('msg_class','alert-danger');
+            }
+            return redirect('profile_con');
+
+
     }
 }
 
