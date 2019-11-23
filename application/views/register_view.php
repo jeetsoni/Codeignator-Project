@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url("css/style.css"); ?>">
 	<!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
@@ -16,7 +17,7 @@
 			<br> 
 			<h3 align="center">Complate User Registration and Login System in Codeigniter</h3>
 			<br>
-			<div class="panel panel-default">
+			<div class="panel panel-default rform">
 				<div class="panel-heading">Register</div>
 				<div class="panel-body">
 					<?php 

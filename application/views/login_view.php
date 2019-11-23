@@ -1,7 +1,8 @@
 	<!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/style.css">
+	
+<link rel="stylesheet" type="text/css" href="<?php base_url(); ?>css/style.css">
 	<!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 

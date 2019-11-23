@@ -22,12 +22,18 @@ class Profile_con extends CI_Controller
     		$this->load->model('admin_model');
     		if($this->admin_model->addpost($post))
     		{
-    			echo "insert";
+    			$this->session->set_flashdata('insert_post','Post added Successfully');
+                $this->session->set_flashdata('msg_class','alert-success');                
     		}
     		else
     		{
-    			echo "failes";
+    			
+                $this->session->set_flashdata('insert_post','Post not added Please Try Again'
+
+            );
+                $this->session->set_flashdata('msg_class','alert-danger');
     		}
+            return redirect('profile_con');
     	}
     	else
     	{

@@ -1,13 +1,30 @@
 <?php include('header.php'); ?>
+
+
 <div class="container" style="margin-top: 50px;">
-	
+
 <div class="container">
 	<div class="row">
 		<a href="<?php base_url() ?>profile_con/addpost" class="btn btn-lg btn-primary" style="margin-bottom: 10px;">Add Post</a>
-		
 	</div>
 	
 </div>
+
+<?php if($insert_post = $this->session->flashdata('insert_post')): 
+$msg_class = $this->session->flashdata('msg_class');
+
+?>
+<div class="row">
+	<div class="col-lg-6">
+		<div class="alert <?php echo $msg_class?>">
+			<?php echo $insert_post; ?>
+		</div>
+	</div>
+</div>
+<?php endif; ?>
+
+
+
 <div class="table">
 	<table>
 	<thead>
