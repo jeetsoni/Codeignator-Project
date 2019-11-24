@@ -2,7 +2,7 @@
 <html>
 <head>
 	
-<link rel="stylesheet" type="text/css" href="<?php base_url('Assets/css/style.css'); ?>">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('Assets/css/style.css'); ?>">
 	<!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -21,7 +21,7 @@
   <div class="row justify-content-sm-center">
     <div class="col-sm-6 col-md-4">
 
-      <div class="card border-info text-center">
+      <div class="card border-success text-center">
         <div class="card-header">
           Login
         </div>
@@ -34,7 +34,7 @@
 					}
 					 ?>
         <div class="card-body">
-          <img src="<?php base_url('Assets/img/Marwadi_University_logo.png'); ?>" alt="not Found">
+          <img src="<?php echo base_url('Assets/img/Marwadi_University_logo.png'); ?>" alt="not Found" width="100px">
           <h4 class="text-center">Marwadi University</h4>
           
           <form class="form-signin" method="post" action="<?php echo base_url();?>login_con/validation" >
@@ -52,7 +52,7 @@
 					
 
 					
-						<input type="submit" name="login" value="Login" class="btn btn-lg btn-primary btn-block mb-1">
+						<input type="submit" name="login" value="Login" class="btn btn-lg btn-success btn-block mb-1">
 						
 					</form>
 
