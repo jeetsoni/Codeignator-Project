@@ -62,6 +62,7 @@ class Profile_con extends CI_Controller
 
 
     }
+    
 }
 
 
