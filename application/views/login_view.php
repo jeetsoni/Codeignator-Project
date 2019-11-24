@@ -21,7 +21,7 @@
   <div class="row justify-content-sm-center">
     <div class="col-sm-6 col-md-4">
 
-      <div class="card border-success text-center">
+      <div class="card border-info text-center">
         <div class="card-header">
           Login
         </div>
@@ -52,7 +52,7 @@
 					
 
 					
-						<input type="submit" name="login" value="Login" class="btn btn-lg btn-success btn-block mb-1">
+						<input type="submit" name="login" value="Login" class="btn btn-lg btn-info btn-block mb-1">
 						
 					</form>
 
