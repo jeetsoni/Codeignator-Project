@@ -39,7 +39,7 @@ $msg_class = $this->session->flashdata('msg_class');
 		<?php foreach ($artlicles as $art): ?>
 		<tr>
 			<td><?php echo $art->article_title; ?></td>
-			<td><a href="#" class="btn btn-info">Edit</a></td>
+			<td><?php echo anchor("profile_con/editpost/{$art->id}",'Edit',['class'=>'btn btn-info']); ?></td>
 			<td>
 				<?php echo
 				form_open('profile_con/delpost'),
@@ -57,6 +57,7 @@ $msg_class = $this->session->flashdata('msg_class');
 	<?php endif; ?>
 	</tbody>
 	</table>
+	
 	
 </div>
 </div>

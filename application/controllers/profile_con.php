@@ -9,6 +9,7 @@ class Profile_con extends CI_Controller
                 $this->load->model('admin_model');
                 $artlicles = $this->admin_model->articlelist();
                 $this->load->view('profile_view',['artlicles'=>$artlicles]);
+
         }
     public function addpost()
     {
@@ -62,6 +63,13 @@ class Profile_con extends CI_Controller
 
 
     }
+    public function editpost($id)
+    {
+        echo $id;
+    }
+
+    
+
     
 }
 

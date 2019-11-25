@@ -53,3 +53,4 @@ $route['private_area/:num'] = 'private_area';
 $route['default_controller'] = 'register_con';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+$route['articles/(:num)'] = 'articles';
