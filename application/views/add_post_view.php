@@ -15,7 +15,7 @@
 					}
 					 ?>
 					
-					<form method="post" action="<?php echo base_url();?>profile_con/add_validation" >
+					<form method="post" enctype="multipart/form-data" action="<?php echo base_url();?>profile_con/add_validation" >
 					<?php echo form_hidden('user_id',$this->session->userdata('id')); ?>
 					<div class="form-group">
 						<label>Post Tittle</label>
@@ -29,9 +29,23 @@
 						<span class="text-danger"><?php echo form_error('article_body'); ?></span>
 
 					</div>
+					<div class="row">
+					<div class="col-lg-6">
+						<div class="form-group">
+						<label for="body">Select Image</label>
+
+						<?php echo form_upload(['name'=>'userfile']); ?>
+
+						</div>
+					</div>
+					<div class="col-lg-6" style=" margin-top: 35px; color: red;">
+						<?php if(isset($upload_error)) { echo $upload_error;} ?>
+
+					</div>
+					</div>
 
 					<div class="forn-group">
-						<input type="submit" value="Login" class="btn btn-info">
+						<input type="submit" value="Add Post" class="btn btn-info">
 						<input type="reset"  class="btn btn-danger" value="Reset">
 					</div>	
 

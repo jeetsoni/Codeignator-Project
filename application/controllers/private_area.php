@@ -17,7 +17,13 @@
 		}
 		function index()
 		{
-			$this->load->view('private_area_view');	
+			$this->load->model('admin_model');
+			$articles = $this->admin_model->all_post();
+			
+
+
+			$this->load->view('private_area_view',compact('articles'));
+				
 		}
 		function logout()
 		{
@@ -28,6 +34,7 @@
 			}
 			redirect('login_con');
 		}
+
 		
 	}
 

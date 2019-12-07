@@ -16,15 +16,17 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
+
 	<nav class="navbar navbar-expand-lg navbar-dark bg-info">
-  <a class="navbar-brand" href="<?php echo base_url(); ?>private_area">Admin Panel</a>
+  <div class="container">
+  <a class="navbar-brand" href="<?php echo base_url(); ?>private_area"><img src="<?php echo base_url('/Assets/img/Marwadi_University_logo.png') ?>" alt="" width="50px" height="50px;"></a>
   
   
   <div class="dropdown" style="margin-left: auto;margin-right: 100px;">
   <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
    <?php echo $this->session->userdata('uname'); ?>
   </button>
-  <div class="dropdown-menu bg-info">
+  <div class="dropdown-menu">
     <a class="dropdown-item" href="<?php echo base_url(); ?>profile_con">My Profile</a>
     <?php if($this->session->userdata('id'))
   {
@@ -39,5 +41,5 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  
+  </div>
 </nav>
