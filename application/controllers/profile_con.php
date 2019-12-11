@@ -62,8 +62,8 @@ class Profile_con extends CI_Controller
         }
     }
 
-    public function delpost(){
-        $id = $this->input->post('id');
+    public function delpost($id){
+       //$id = $this->input->post('id');
         $this->load->model('admin_model');
             if($this->admin_model->delpost($id))
             {

@@ -26,40 +26,34 @@ $msg_class = $this->session->flashdata('msg_class');
 
 
 <div class="table">
-	<table>
-	<thead>
-		<tr>
-			<th>Article Title</th>
-			<th>Edit</th>
-			<th>Delete</th>
-		</tr>
-	</thead>
-	<tbody>
-		<?php if(count($artlicles)): ?>
-		<?php foreach ($artlicles as $art): ?>
-		<tr>
-			<td><?php echo $art->article_title; ?></td>
-			<td><?php echo anchor("profile_con/editpost/{$art->id}",'Edit',['class'=>'btn btn-info']); ?></td>
-			<td>
-				<?php echo
-				form_open('profile_con/delpost'),
-				form_hidden('id',$art->id),
-				form_submit(['name'=>'submit','value'=>'Delete','class'=>'btn btn-danger']),
-				form_close();
-				 ?>
-			</td>
-		</tr>
-	<?php endforeach; ?>
+	<div class="row">
+	<?php if(count($artlicles)): ?>
+<?php foreach ($artlicles as $art): ?>
+<div class="card my-4 mx-4" style="width: 18rem;">
+<?php if(!is_null($art->image_path)) {?>  
+<img class="img-thumbnail" src="<?php echo $art->image_path ?>" alt="">
+<?php } ?>
+  <div class="card-body">
+    <p class="card-text"><?php echo $art->article_title; ?>	</p>
+    <a href="<?php echo base_url("profile_con/editpost/{$art->id}") ?> " class="btn btn-info">Edit</a>
+	<a href="<?php echo base_url("profile_con/delpost/{$art->id}") ?> " class="btn btn-danger">Delete</a>
+  </div>
+</div>
+<?php endforeach; ?>
 	<?php else: ?>
 		<tr>
 			<td colspan="3">No Data Available</td>
 		</tr>
 	<?php endif; ?>
-	</tbody>
-	</table>
-	
-	
 </div>
+	
+	</div>	
 </div>
+
+
+
+
+
+
 </body>
 </html>
