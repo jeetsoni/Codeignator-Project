@@ -1,8 +1,56 @@
-.card {
-	margin-top: 100px;
-  	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);\
+.dropdown, .dropup {
+    padding-top: 23px !important;
 }
-.body{
-	background-image: url('Assets/img/login2.jpg');
-	background-size: cover;
+.app_name{
+    padding-top: 30px !important;
+}
+.search{
+    padding-top: 15px !important;
+
+}
+.p_img1{
+    border-radius: 50px;
+}
+.p_img1:hover{
+   box-shadow: 8px 5px 6px #ccc;
+}
+.p_img{
+    margin-right: 21px;
+    border-radius: 50px;
+
+}
+.p_img:hover{
+   box-shadow: 8px 5px 6px #ccc;
+    
+}
+textarea{
+    resize: none;
+}
+.card{
+width: 100% !important;
+margin-bottom: 50px;
+border: 1px solid #ccc;
+}
+.pic_heading{
+    width: 100%;
+    border: 1px solid #ccc;
+}
+.heading_name{
+    padding-left: 10px;
+   
+}
+.h_img{
+    border-radius: 50px;
+
+}
+.h_date{
+    float: right;
+}
+.card-img-top{
+    padding:17px;
+}
+.card-text{
+    text-align: center;
+    padding: 3px;
+    margin-top: 46px;
 }
